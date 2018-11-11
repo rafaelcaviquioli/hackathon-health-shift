@@ -14,7 +14,10 @@ export const events = [
     title: "Plantão Enfermeiro Rodrigo",
     start: new Date(2018, 10, 11, 8, 10),
     end: new Date(2018, 10, 11, 17, 0),
-    desc: "Plantão no Setor X"
+    desc: "Plantão no Setor X",
+    onClick: () => {
+      console.log('muito foda');
+    },
   },
   {
     title: "Plantão Dr. Ronaldo",

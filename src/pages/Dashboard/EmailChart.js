@@ -33,17 +33,14 @@ const EmailStatistic = () => {
   let chartType = 'Pie';
 
   return (
-
     <div className="card">
       <div className="header">
-        <h4 className="title">Occorrências</h4>
+        <h4 className="title">Occorrências </h4>
         <p className="category">Ocorrências em plantões</p>
       </div>
       <div className="content">
 
         <ChartistGraph data={dataPreferences} options={optionsPreferences} type={chartType} className={'ct-chart ct-perfect-fourth'} />
-
-
       </div>
       <div className="footer">
         <div className="legend">

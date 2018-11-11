@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { Route} from 'react-router-dom';
 import { connect } from 'react-redux';
 import cx from 'classnames';
 import { setMobileNavVisibility } from '../../reducers/Layout';
@@ -8,8 +8,6 @@ import { withRouter } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import SideBar from '../../components/SideBar';
-import ThemeOptions from '../../components/ThemeOptions';
-import MobileMenu from '../../components/MobileMenu';
 /**
  * Pages
  */

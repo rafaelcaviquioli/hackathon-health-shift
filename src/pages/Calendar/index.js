@@ -10,6 +10,7 @@ BigCalendar.setLocalizer(
 
 let allViews = Object.keys(BigCalendar.views).map(k => BigCalendar.views[k])
 
+
 const Calendar = () => (
   <div className="content">
     <div className="container-fluid">
@@ -20,7 +21,12 @@ const Calendar = () => (
             step={60}
             showMultiDayTimes
             views={allViews}
-            defaultDate={new Date()} />
+            defaultDate={new Date()} 
+            onSelectEvent = {(e) => {
+              let baita = JSON.stringify(e);
+              window.location = '/forms:baita';
+            }}
+   s       />
         </div>
       </div>
     </div>
