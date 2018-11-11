@@ -11,8 +11,8 @@ import ChartistGraph from 'react-chartist';
 const EmailStatistic = () => {
 
   let dataPreferences = {
-    labels: ['62%', '32%', '6%'],
-    series: [62, 32, 6]
+    labels: ['10%', '35%', '31%', '14%'],
+    series: [20, 35, 31, 14]
   };
 
   let optionsPreferences = {
@@ -35,8 +35,7 @@ const EmailStatistic = () => {
   return (
     <div className="card">
       <div className="header">
-        <h4 className="title">Occorrências </h4>
-        <p className="category">Ocorrências em plantões</p>
+        <h4 className="title">Plantões por colaboradores </h4>
       </div>
       <div className="content">
 
@@ -45,19 +44,18 @@ const EmailStatistic = () => {
       <div className="footer">
         <div className="legend">
           <div className="item">
-            <i className="fa fa-circle text-info"></i> Open
+            <i className="fa fa-circle text-info"></i> Ronaldo
           </div>
           <div className="item">
-            <i className="fa fa-circle text-danger"></i> Bounce
+            <i className="fa fa-circle text-danger"></i> Luis
           </div>
           <div className="item">
-            <i className="fa fa-circle text-warning"></i> Unsubscribe
+            <i className="fa fa-circle text-warning"></i> Maria
+          </div>
+          <div className="item">
+            <i className="fa fa-circle text-success"></i> Joana
           </div>
         </div>
-        <hr />
-        <div className="stats">
-          <i className="fa fa-clock-o"></i> Campaign sent 2 days ago
-          </div>
       </div>
     </div>
 

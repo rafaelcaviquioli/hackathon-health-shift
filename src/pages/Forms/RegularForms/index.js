@@ -23,7 +23,7 @@ class StackedForm extends React.Component {
           <h2>{dados.title}</h2>
           <br />
           <h4>{dados.desc}</h4>
-          <h6>De {moment(dados.start).format('DD/MM/YYYY')} até {moment(dados.end).format('DD/MM/YYYY')}</h6>
+          <h6>De {moment(dados.start).format("DD/MM/YYYY HH:mm")} até {moment(dados.end).format("DD/MM/YYYY HH:mm")}</h6>
         </div>
 
         <div className="content">

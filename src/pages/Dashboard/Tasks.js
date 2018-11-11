@@ -8,32 +8,22 @@ class Tasks extends Component {
     todos: [
       {
         id: 1,
-        content: 'Sign contract for "What are conference organizers afraid of?"',
+        content: '(Concluído) 11/11 01:00 - 13:00 - Dr. Ronaldo',
         completed: true
       },
       {
         id: 2,
-        content: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
-        completed: true
+        content: '(Andamento) 11/11 13:00 - 21:00 - Dr. Luis',
+        completed: false
       },
       {
         id: 3,
-        content: 'Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit	',
-        completed: true
+        content: '11/11 21:00 - 12/11 07:00 - Dra. Maria',
+        completed: false
       },
       {
         id: 4,
-        content: 'Create 4 Invisible User Experiences you Never Knew About',
-        completed: false
-      },
-      {
-        id: 5,
-        content: 'Read "Following makes Medium better"	',
-        completed: false
-      },
-      {
-        id: 6,
-        content: 'Lines From Great Russian Literature? Or E-mails From My Boss?',
+        content: '12/11 07:00 - 17:00 - Dr. Ronaldo',
         completed: false
       }
     ]
@@ -58,8 +48,7 @@ class Tasks extends Component {
     return (
       <div className="card ">
         <div className="header">
-          <h4 className="title">Tasks</h4>
-          <p className="category">Backend development</p>
+          <h4 className="title">Plantões hoje</h4>
         </div>
         <div className="content">
           <form>
@@ -84,14 +73,6 @@ class Tasks extends Component {
             </div>
           ))}
           </form>
-
-
-        </div>
-        <div className="footer">
-          <hr />
-          <div className="stats">
-            <i className="fa fa-history"></i> Updated 3 minutes ago
-              </div>
         </div>
       </div>
     );

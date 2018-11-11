@@ -8,10 +8,10 @@ const Dashboard = () => (
   <div className="content">
     <div className="container-fluid">
       <div className="row">
-        <div className="col-md-4">
+        <div className="col-md-5">
           <EmailChart />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-7">
           <SalesChart />
         </div>
       </div>
