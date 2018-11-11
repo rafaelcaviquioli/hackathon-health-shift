@@ -1,5 +1,6 @@
 import React from 'react';
 import SpeechRecognition from 'react-speech-recognition'
+import moment from 'moment';
 
 class StackedForm extends React.Component {
   render() {
@@ -13,11 +14,18 @@ class StackedForm extends React.Component {
       match
     } = this.props;
 
+    var dados = JSON.parse(match.params.dados);
+    console.log(dados);
+
     return (
       <div className="card">
         <div className="header">
-          <h4>Plantão de Karina</h4>
+          <h2>{dados.title}</h2>
+          <br />
+          <h4>{dados.desc}</h4>
+          <h6>De {moment(dados.start).format('DD/MM/YYYY')} até {moment(dados.end).format('DD/MM/YYYY')}</h6>
         </div>
+
         <div className="content">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
