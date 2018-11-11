@@ -20,7 +20,7 @@ class UserInfo extends Component {
             <div className="username">
               {user.name}
             </div>
-            <div className="title">Admin</div>
+            <div className="title">{user.type}</div>
           </div>
           <span
             onClick={() => this.setState({ isShowingUserMenu: !this.state.isShowingUserMenu })}

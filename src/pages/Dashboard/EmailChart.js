@@ -36,8 +36,8 @@ const EmailStatistic = () => {
 
     <div className="card">
       <div className="header">
-        <h4 className="title">Email Statistics</h4>
-        <p className="category">Last Campaign Performance</p>
+        <h4 className="title">Occorrências</h4>
+        <p className="category">Ocorrências em plantões</p>
       </div>
       <div className="content">
 
