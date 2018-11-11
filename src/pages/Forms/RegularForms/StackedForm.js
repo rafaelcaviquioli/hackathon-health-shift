@@ -22,39 +22,37 @@ const StackedForm = ({
   handleSubmit,
   submitForm
 }) => (
-  <div className="card">
-    <div className="header">
-      <h4>Stacked Form</h4>
+    <div className="card">
+      <div className="header">
+        <h4>Plantão de Karina</h4>
+      </div>
+      <div className="content">
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label className="control-label">Registrar histórico</label>
+            <Field
+              name="email"
+              type="email"
+              component={renderField} />
+          </div>
+
+          <button type="submit" className="btn btn-fill btn-info" disabled={submitting}
+            style={{
+              backgroundColor: '#f03a37',
+              color: 'white',
+              border: 'none',
+              fontSize: '20px',
+              marginRight: '5px',
+
+            }}>
+            <i className="pe-7s-micro"></i>
+          </button>
+ 
+          <button type="submit" className="btn btn-fill btn-info" disabled={submitting}>Salvar</button>
+        </form>
+      </div>
     </div>
-    <div className="content">
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label className="control-label">Email</label>
-          <Field
-            name="email"
-            type="email"
-            component={renderField} />
-        </div>
-
-        <div className="form-group">
-          <label className="control-label">Password</label>
-          <Field
-            name="password"
-            type="password"
-            component={renderField} />
-        </div>
-
-        <Field
-          name="newsletter"
-          type="checkbox"
-          component={renderField}
-          label="Subscribe to newsletter" />
-
-        <button type="submit" className="btn btn-fill btn-info" disabled={submitting}>Submit</button>
-      </form>
-    </div>
-  </div>
-);
+  );
 
 export default reduxForm({
   form: 'stackedForm',

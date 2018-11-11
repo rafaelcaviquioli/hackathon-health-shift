@@ -12,6 +12,7 @@ const renderField = (props) => (
       <TextInput {...props} />
     }
     { props.type === 'checkbox' && <Checkbox {...props} /> }
+    { props.type === 'textarea' && <textarea {...props} /> }
     { props.type === 'radio' && <Radio {...props} /> }
   </div>
 );
