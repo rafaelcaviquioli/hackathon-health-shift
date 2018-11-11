@@ -24,7 +24,7 @@ const Calendar = () => (
             defaultDate={new Date()} 
             onSelectEvent = {(e) => {
               let baita = JSON.stringify(e);
-              window.location = '/forms:baita';
+              window.location = `/#/forms/regular-forms/${baita}`;
             }}
    s       />
         </div>
